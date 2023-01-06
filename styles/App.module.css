@@ -1,0 +1,42 @@
+.container {
+  max-width: 1300px;
+  margin: 0px auto;
+}
+.layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 20px;
+}
+.main {
+  flex: 1;
+}
+
+.g1 {
+  grid-area: topleft;
+}
+.g2 {
+  grid-area: botleft;
+}
+.g3 {
+  grid-area: topright;
+}
+.g4 {
+  grid-area: middleright;
+}
+.g5 {
+  grid-area: botright;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "topleft topright"
+    "botleft middleright"
+    "botleft botright";
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
